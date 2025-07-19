@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<h1>QUERY syntax:</h1><br />
+[FROM database] command<br />
+<br />
+<h3>commands:</h3><br />
+CREATE keys...<br />
+DELETE<br />
+CLEAR<br />
+ADD values...<br />
+REMOVE conditions<br />
+SELECT format_string conditions<br />
+FORMAT format_string<br />
+<br />
+<h3>conditions:</h3><br />
+key=value<br />
+condition AND condition<br />
+condition OR condition<br />
+NOT condition<br />
+(condition)<br />
+<br />
+<h3>format</h3><br />
+"string %field;string continues"<br />
+<br />
+<h1>C_SNEK language manual:</h1><br />
+<h3>c_snek system functions</h3><br />
+print([out_string], varaibles_to_print...)  - appends output<br />
+sprint([out_string], varaibles_to_print...) - set output<br />
+strcmp(string1, string2) - compares strings<br />
+set_cookie(cookies, name [,value]) - sets or removes a cookie<br />
+query(query_results, variables_for_query_string...)<br />
+get_query(query_results, out_string, index)<br />
+<br />
+<h3>c_snek system variables:</h3><br />
+out_string - the global output string<br />
+cookies - the cookie handle<br />
+query_results - result handler for database queries<br />
+query_prompt - a secondary string for query output<br />
+<br />
+<h3>c_snek keywords:</h3><br />
+var - declare variable<br />
+func - declare function<br />
+if - conditional check<br />
+else - conditional else<br />
+while - conditional loop<br />
+return - return from function<br />
+<br />
+<h3>operators:</h3><br />
+== - compare equals<br />
+!= - compare different<br />
+>= - compare greater-or-equals<br />
+<= - compare smaller-or-equals<br />
+> - compare greater<br />
+< - compare smaller<br />
+= - assign<br />
++ - add<br />
+- - subtract<br />
+* - mul (*DEREF)<br />
+/ - div<br />
+& - &REF<br />
+() - breacket<br />
+{} - code block<br />
+, - comma seperator(specific use cases!!!!)<br />
+; - Line End<br />
+"" - string literal<br />
+// - single line comment<br />
+/* */ - multi line comment<br />
+</BODY>
+</HTML>
